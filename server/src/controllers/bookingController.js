@@ -7,7 +7,7 @@ const {
     isHoliday,
     isAfter3PM,
     isNextWorkingDay
-} = require("../services/ValidationService");
+} = require("../services/validationService");
 
 const { isDesignatedDay } = require("../services/attendanceService");
 
