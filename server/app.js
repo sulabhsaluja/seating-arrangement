@@ -8,7 +8,10 @@ const adminRoutes = require("./src/routes/adminRoutes");
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://seating-arrangement-tlkw.onrender.com/",
+  credentials: true
+}));
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
